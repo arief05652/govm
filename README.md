@@ -35,7 +35,7 @@ uv tool install .
 Or from a Git repository:
 
 ```bash
-uv tool install git+https://github.com/<you>/govm
+uv tool install git+https://github.com/arief05652/govm
 ```
 
 With [pipx](https://pipx.pypa.io/):
@@ -167,4 +167,11 @@ and shims, which need Administrator rights or Developer Mode, and the automatic
 
 ## License
 
-Not specified yet.
+Licensed under the GNU General Public License v3.0 or later
+([GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0.html)).
+
+You are free to use, study, share and modify this project. Any distributed
+version or derivative work must also be released under the GPL and must make
+its source code available.
+
+See the `LICENSE` file for the full text.

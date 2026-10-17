@@ -1,10 +1,12 @@
 [project]
 name = "govm"
 version = "0.1.0"
-description = "Go version manager - install dan switch banyak versi Go"
+description = "Go version manager - install and switch between multiple Go versions"
 readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 authors = [
-    { name = "arief minardi", email = "ariefminardi140@gmail.com" }
+    { name = "arief minardi", email = "ariefminardi005@gmail.com" }
 ]
 requires-python = ">=3.12"
 dependencies = [
