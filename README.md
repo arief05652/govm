@@ -1,5 +1,9 @@
 # govm
 
+[![PyPI version](https://img.shields.io/pypi/v/govm.svg)](https://pypi.org/project/govm/)
+[![Python versions](https://img.shields.io/pypi/pyversions/govm.svg)](https://pypi.org/project/govm/)
+[![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+
 A small Go version manager written in Python.
 
 `govm` lets you install several Go toolchains side by side, switch between
@@ -26,27 +30,37 @@ lives in its own directory, and a single `govm use` command decides which one
 
 ## Installation
 
-Install as a standalone tool with [uv](https://docs.astral.sh/uv/):
+`govm` is published on PyPI as [`govm`](https://pypi.org/project/govm/).
+
+The recommended way is [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv tool install .
-```
-
-Or from a Git repository:
-
-```bash
-uv tool install git+https://github.com/arief05652/govm
+uv tool install govm
 ```
 
 With [pipx](https://pipx.pypa.io/):
 
 ```bash
-pipx install .
+pipx install govm
+```
+
+Or with plain pip:
+
+```bash
+pip install --user govm
+```
+
+Install the latest development version straight from Git:
+
+```bash
+uv tool install git+https://github.com/arief05652/govm
 ```
 
 For local development:
 
 ```bash
+git clone https://github.com/arief05652/govm
+cd govm
 uv sync
 uv run govm --help
 ```
@@ -136,13 +150,15 @@ export GOVM_ROOT=/opt/govm
 ## Uninstalling govm
 
 Remove the marked block that `govm use` added to your shell rc, then delete
-`~/.govm`. If you installed the tool itself with uv or pipx, remove it the same
-way:
+`~/.govm`. If you installed the tool itself with uv, pipx or pip, remove it
+the same way:
 
 ```bash
 uv tool uninstall govm
 # or
 pipx uninstall govm
+# or
+pip uninstall govm
 ```
 
 ## Platform support
