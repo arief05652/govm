@@ -1,0 +1,20 @@
+[project]
+name = "govm"
+version = "0.1.0"
+description = "Go version manager - install dan switch banyak versi Go"
+readme = "README.md"
+authors = [
+    { name = "arief minardi", email = "ariefminardi140@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.5.0",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+govm = "govm:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
